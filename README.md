@@ -1,37 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Full-Stack Task Management & Crypto Dashboard
 
-## Getting Started
+Next.js (App Router) imkoniyatlaridan foydalangan holda yaratilgan Full-Stack vazifalar boshqaruvi (Kanban doskasi) va Kripto ma'lumotlar platformasi. Loyiha ham chiroyli frontend vizualiga, ham ichki API arxitekturasiga ega.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Loyihada Nimalar Bor? (Features)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 1. 📊 Kripto Dashboard
+* Real vaqtda kriptovalyutalar ma'lumotlarini kuzatish.
+* Dinamik routlar orqali har bir koin uchun alohida batafsil ma'lumotlar sahifasi (`/crypto/[id]`).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 2. 📋 3 Ustunli Kanban Doskasi (`/tasks`)
+* **Vazifa Qo'shish:** Input orqali yangi topshiriqlarni real vaqtda ro'yxatga qo'shish.
+* **Zanjirli Mantiq (Move Logic):** Vazifalarni bir marta bosish orqali ustunlararo tartib bilan aylantirish:
+  * `Kutilmoqda (Todo)` ➡️ `Bajarilmoqda (In Progress)` ➡️ `Bajarildi (Done)` ➡️ `Kutilmoqda (Todo)`
+* **Responsive Grid:** Mobil qurilmalar va monitorlar uchun to'liq moslashuvchan (Mobile-first) dizayn.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 3. ⚙️ Ichki Full-Stack API (Backend)
+* `src/app/api/tasks/route.ts` fayli orqali backend to'liq Next.js ichida hal qilingan.
+* **GET** — Vazifalar ro'yxatini serverdan olish.
+* **POST** — Yangi vazifani server xotirasiga qo'shish.
+* **PUT** — Vazifa holatini (status) serverda yangilash.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Texnologiyalar Tizimi (Tech Stack)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* **Framework:** Next.js (App Router)
+* **Language:** TypeScript
+* **Library:** React.js (`useState`, `useEffect`)
+* **Styling:** Tailwind CSS (Dark Mode dizayn)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🚀 Loyihani Kompyuterda Ishga Tushirish
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-"# task-management" 
+1. **Repozitoriyani yuklab oling:**
+   ```bash
+   git clone [https://github.com/shuhrat995/task-management.git](https://github.com/shuhrat995/task-management.git)
+   cd cod
